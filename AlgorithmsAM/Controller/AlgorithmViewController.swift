@@ -15,9 +15,8 @@ class AlgorithmViewController : UIViewController
     override func viewDidLoad() -> Void
     {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        
+        let bullet = "🧟‍♀️"
         setupAlgorithm()
     }
     
@@ -31,7 +30,7 @@ class AlgorithmViewController : UIViewController
         let stepFour : String = "Does the Doctor dance?"
         /// continue for your algorithm instructions
         
-        let algorithm = [stepOne, stepTwo, stepThree]
+        let algorithm = [stepOne, stepTwo, stepThree, stepFour]
         
         let attributesDictionary = [NSAttributedString.Key.font : algorithmLabel.font]
         let fullAttributedString = NSMutableAttributedString(string: algorithmTitle, attributes: attributesDictionary as [NSAttributedString.Key : Any])
@@ -50,17 +49,6 @@ class AlgorithmViewController : UIViewController
         
         algorithmLabel.attributedText = fullAttributedString
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     private func createOutlineStyle() -> NSParagraphStyle
     {

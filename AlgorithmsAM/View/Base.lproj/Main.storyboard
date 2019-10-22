@@ -24,18 +24,18 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g4J-Gl-xIX">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69B-f2-3jQ">
-                                        <rect key="frame" x="0.0" y="278" width="414" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="xJR-8K-7hi"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69B-f2-3jQ">
+                                        <rect key="frame" x="0.0" y="278" width="414" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbf-SK-Ofa">
-                                        <rect key="frame" x="0.0" y="449" width="414" height="150"/>
+                                        <rect key="frame" x="0.0" y="428" width="414" height="171"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="Agu-qD-wQO" kind="show" id="auk-xz-RSt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -50,12 +50,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="algorithmLabel" destination="69B-f2-3jQ" id="N4D-xv-Rmi"/>
+                        <outlet property="algorithmLabel" destination="69B-f2-3jQ" id="E8g-tU-f8w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+            <point key="canvasLocation" x="568" y="137"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="irU-Mo-9Sx">
@@ -69,6 +69,9 @@
                                 <rect key="frame" x="190" y="765" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="qKb-oX-YWW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USW-Pb-aBM">
                                 <rect key="frame" x="20" y="381" width="374" height="321"/>
@@ -88,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRU-Lp-cX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029" y="141"/>
+            <point key="canvasLocation" x="-317.39130434782612" y="122.54464285714285"/>
         </scene>
     </scenes>
 </document>
